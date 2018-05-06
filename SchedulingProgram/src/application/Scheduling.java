@@ -286,7 +286,7 @@ class Scheduling{
 		p.setWT(p.getTT()-p.getBT());
 		p.setNT((float)(p.getTT())/p.getBT());
 		pArrT.add(p);
-		System.out.println("finished, time: "+t);
+		System.out.println("\n(p"+p.getPid()")finished, time: "+t);
 	}
 }
 
