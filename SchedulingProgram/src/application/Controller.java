@@ -218,7 +218,6 @@ public class Controller implements Initializable {
 		    	list.add(CategoryP[i]);
 		    	chart.setData(list);
 		    }
-		    ss
 		    
 		    //차트 series 색상 조정
 		    for(int i = 0; i < size; i++) { 
