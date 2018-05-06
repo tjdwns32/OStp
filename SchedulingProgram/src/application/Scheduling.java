@@ -9,7 +9,6 @@ class Scheduling{
 	LinkedList<Tuple> qTup = new LinkedList<Tuple>();
 	LinkedList<Integer> P = new LinkedList<Integer>();
 	LinkedList<Integer> T = new LinkedList<Integer>();
-	
 	Scheduling(LinkedList<ProcessP> pArr){
 		this.pArrO = pArr;
 	}
