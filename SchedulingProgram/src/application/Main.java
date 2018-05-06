@@ -10,11 +10,21 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.text.Font;
 
 public class Main extends Application{
 	
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		
+		Font.loadFont(getClass().getResourceAsStream("Oswald-bold.ttf"),
+                14
+        );
+		
+		Font.loadFont(getClass().getResourceAsStream("Sansation.ttf"),
+                14
+        );
 		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
 		
 		Scene scene = new Scene(root);

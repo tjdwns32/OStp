@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
-import com.sun.javafx.charts.Legend;
-import com.sun.javafx.charts.Legend.LegendItem;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -193,7 +191,7 @@ public class Controller implements Initializable {
 		      case "HRRN": sched.HRRN(); break;
 		      default:     
 		    }
- int size = sched.T.size();
+		    int size = sched.T.size();
 		    
 		    //콘솔창에 P배열 T배열값 찍어본거 이거보고 확인하고 수정해도 됨 
 		    for(int i = 0; i < size; i++) {
@@ -204,7 +202,6 @@ public class Controller implements Initializable {
 		    	System.out.print(sched.T.get(i)+" ");
 		    }
 		    System.out.println();
-		    
 		    //스케줄링 결과 차트 그리기
 		    XYChart.Series<Number,Category>[] CategoryP = Stream.<XYChart.Series<String, Number>>
 		    	generate(XYChart.Series::new).limit(size).toArray(XYChart.Series[]::new);
@@ -221,7 +218,7 @@ public class Controller implements Initializable {
 		    	list.add(CategoryP[i]);
 		    	chart.setData(list);
 		    }
-		    
+		    ss
 		    
 		    //차트 series 색상 조정
 		    for(int i = 0; i < size; i++) { 
@@ -231,9 +228,9 @@ public class Controller implements Initializable {
 				   n.setStyle("-fx-bar-fill: rgba(" + rgb[sched.P.get(i)] + ", 0.5);");
 		    	}	
 			}
-		    
+		    chart.setLegendVisible(true);
 		    //차트 범례 개수 조정
-		    Legend legend = (Legend)CategoryP[0].getChart().lookup(".chart-legend");
+		    /*Legend legend = (Legend)CategoryP[0].getChart().lookup(".chart-legend");
 		    legend.getItems().removeIf(item->item.getText().equals("Remove"));
 
 		    //차트 범례 색상 조정
@@ -245,7 +242,7 @@ public class Controller implements Initializable {
 		           ((Label) n).getGraphic().setStyle("-fx-background-color: rgba(" + rgb[i+1] + ", 0.5);");
 	    		}
 	    		i++;
-	    	}
+	    	}*/
 		  //모니터에 스케줄링 결과 출력
 		    textArea.clear();
 		    textArea.setText(textArea.getText() + "-> Complete!!! Process Scheduling : " + nameSchedule + "!\n\r\n\r");
