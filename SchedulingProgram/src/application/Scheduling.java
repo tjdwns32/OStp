@@ -9,7 +9,6 @@ class Scheduling{
 	LinkedList<Tuple> qTup = new LinkedList<Tuple>();
 	LinkedList<Integer> P = new LinkedList<Integer>();
 	LinkedList<Integer> T = new LinkedList<Integer>();
-	
 	Scheduling(LinkedList<ProcessP> pArr){
 		this.pArrO = pArr;
 	}
@@ -287,7 +286,7 @@ class Scheduling{
 		p.setWT(p.getTT()-p.getBT());
 		p.setNT((float)(p.getTT())/p.getBT());
 		pArrT.add(p);
-		System.out.println("finished, time: "+t);
+		System.out.println("\n(p"+p.getPid()")finished, time: "+t);
 	}
 }
 
