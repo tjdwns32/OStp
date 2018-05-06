@@ -37,7 +37,6 @@ public class Controller implements Initializable {
 	private ComboBox comSchedule;
 	@FXML
 	private ComboBox comPro;
-	
 	@FXML
 	private Button btnConfirm;
 	@FXML
