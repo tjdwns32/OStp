@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="30.0" prefWidth="200.0">
+         <children>
+            <Line endX="100.0" startX="-100.0">
+               <HBox.margin>
+                  <Insets left="3.0" top="9.0" />
+               </HBox.margin>
+            </Line>
+            <Label text="Scheduilng Setting" />
+            <Line endX="490.0">
+               <HBox.margin>
+                  <Insets top="9.0" />
+               </HBox.margin>
+            </Line>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <Label text="Number of Processes">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets left="80.0" top="4.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Scheduling" />
+                  <ChoiceBox>
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Label text="TimeQuantum" />
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" text="confirm">
+                     <VBox.margin>
+                        <Insets left="10.0" top="2.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="300.0" spacing="5.0">
+               <children>
+                  <Label text="Process">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox>
+                     <VBox.margin>
+                        <Insets left="80.0" top="5.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Label text="ArrivalTime" />
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="BurstTime" />
+                  <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" text="save" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="155.0" spacing="5.0">
+               <children>
+                  <Label text="---State---" />
+                  <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" />
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" text="Scheduling Start!" />
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="200.0">
+         <children>
+            <Line endX="800.0">
+               <HBox.margin>
+                  <Insets left="3.0" top="8.0" />
+               </HBox.margin>
+            </Line>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="210.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0">
+               <children>
+                  <Label text="---Result---" />
+                  <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,205 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.default-color8.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color9.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color10.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color11.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color12.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color13.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color14.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color15.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color16.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color17.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color18.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color19.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color20.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color21.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color22.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color23.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color24.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color25.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color26.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color27.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color28.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color29.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color30.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color31.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color32.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color33.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color34.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color35.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color36.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color37.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color38.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color39.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color40.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color41.chart-bar {-fx-bar-fill : #4e9a06; }
+.default-color42.chart-bar {-fx-bar-fill : #babdb6; }
+.default-color43.chart-bar {-fx-bar-fill : #4e9a06; }
+
+#root {
+	-fx-body-color : #F5F5F5;
+	-fx-outer-border : #cecece;
+	-fx-background-image: url("MWM.jpg");
+}
+#ProcessScheduling,#Program{
+	-fx-font-family: "Sansation";
+	-fx-font-size: 59px;
+}
+#SchedulingSetting,#ProcessSetting, #Monitor,#Chart{
+	-fx-font-family: "Oswald";
+}
+
+.button:focused,.combo-box:focused.text-field
+{
+	-fx-effect: dropshadow(gaussian, #b4d1f3, 3, 3, 0, 0);
+}
+.combo-box:focused * {
+	-fx-effect: none;
+}
+
+.button{
+	-fx-background-radius: 4;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 4;
+	-fx-pref-height: 30;
+	-fx-min-width: 30;
+	-fx-background-insets: 0, 0, -1, 0;
+	-fx-text-fill: #333333;
+}
+
+.combo-box > .arrow-button{
+	-fx-border-width: 0;
+}
+.combo-box:hover,.button:hover{
+	-fx-background-color: #e6e6e6;
+	-fx-border-color: #acacac;
+}
+.combo-box:pressed > .arrow-button,.combo-box:selected > .arrow-button,
+.button:pressed, .button:selected{
+	-fx-background-color: #e6e6e6;
+	-fx-border-color: #acacac;
+	-fx-effect: innershadow(gaussian, #adadad, 10, 0, 0, 3);
+}
+.text-field {
+	-fx-pref-height: 30;
+}
+.combo-box{
+	-fx-background-insets: 0;
+	-fx-border-color: #cecece;
+	-fx-padding: -1;
+	-fx-border-width: 1;	
+	-fx-border-radius: 4;
+	-fx-background-radius: 4;
+	-fx-pref-height: 30;
+}
+.combo-box > .text-input{
+	-fx-background-radius: 4 0 0 4;
+	-fx-border-width: 0;
+}
+
+.text-field, .text-area {
+	-fx-border-color: #cccccc;
+	-fx-background-color: white;
+	-fx-border-radius: 4;
+	-fx-background-radius: 4;
+	-fx-effect: innershadow(gaussian, transparent, 0, 0, 0, 0);
+}
+
+.text-field:focused, .text-area:focused {
+	-fx-border-color: #66afe9;
+	-fx-effect: dropshadow(gaussian, #66afe9, 10, 0, 0, 0);
+}
+.scroll-bar {
+	-fx-background-color: #fafafa;
+	-fx-background-radius: 0;
+	-fx-block-increment: 50;
+}
+.corner {
+	-fx-background-color: transparent;
+}
+.scroll-bar .decrement-button, .scroll-bar .decrement-arrow {
+	visibility: hidden;
+	-fx-pref-height: 1;
+	-fx-pref-width: 1;
+}
+.scroll-bar .increment-button, .scroll-bar .increment-arrow {
+	visibility: hidden;
+	-fx-pref-height: 1;
+	-fx-pref-width: 1;
+}
+.scroll-bar:vertical {
+	-fx-pref-width: 10;
+}
+.scroll-bar:horizontal {
+	-fx-pref-height: 10;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 5;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-background-radius: 5;
+}
+.scroll-bar:horizontal .thumb {
+	-fx-background-color: #c9c9c9;
+	-fx-background-insets: 2 0 2 0;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb {
+	-fx-background-color: #c9c9c9;
+	-fx-background-insets: 0 2 0 2;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+	-fx-background-color: #b5b5b5;
+}
+
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+	-fx-background-color: #a0a0a0;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+	-fx-background-color: transparent;
+	-fx-background-radius: 5;
+	-fx-padding: 5;
+}
+
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+	-fx-background-color: transparent;
+	-fx-background-radius: 5;
+	-fx-padding: 5;
+}
+
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+	-fx-background-color: transparent, rgb(96, 96, 96), rgb(96, 96, 96);
+}
+
+.color-palette {
+	-fx-background-color: white;
+}
+.split-pane > .split-pane-divider {
+	-fx-background-color: white;
+	-fx-border-color: #eeeeee;
+	-fx-pref-width: 8;
+}
+.split-pane:horizontal > .split-pane-divider {
+	-fx-background-insets: 0, 0 1 0 1;
+	-fx-border-width: 0 1 0 1;
+}
+.split-pane:vertical > .split-pane-divider {
+	-fx-background-insets: 0, 1 0 1 0;
+	-fx-border-width: 1 0 1 0;
+}
+.split-pane > .split-pane-divider:hover {
+	-fx-background-color: #E0E0E0;
+}
