@@ -21,7 +21,6 @@ public class Main extends Application{
 		Font.loadFont(getClass().getResourceAsStream("Oswald-bold.ttf"),
                 14
         );
-		
 		Font.loadFont(getClass().getResourceAsStream("Sansation.ttf"),
                 14
         );
