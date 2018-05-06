@@ -6,9 +6,8 @@ class Scheduling{
 	LinkedList<ProcessP> pArrO;
 	//LinkedList<ProcessP> pArrD = new LinkedList<ProcessP>();
 	LinkedList<ProcessP> pArrT = new LinkedList<ProcessP>();
-	LinkedList<Tuple> qTup = new LinkedList<Tuple>();
-	LinkedList<Integer> P = new LinkedList<Integer>();
-	LinkedList<Integer> T = new LinkedList<Integer>();
+	LinkedList<Integer> P = new LinkedList<Integer>();//실행되는 프로세스 순서 기록큐
+	LinkedList<Integer> T = new LinkedList<Integer>();//실행되는 프로세스 시간 기록큐
 	Scheduling(LinkedList<ProcessP> pArr){
 		this.pArrO = pArr;
 	}
@@ -93,7 +92,8 @@ class Scheduling{
 				if(!isfinished) { 
 					boolean isNAexist = false;
 					for(int i = 0;i<pArrO.size();i++) {
-						if(pArrO.get(i).getAT()>t) {//프로세스 AT가 t보다 큰 경우면 아직 도착안한거니까 그 앞에 add
+						if(pArrO.get(i).getAT()>t) {
+							//프로세스 AT가 t보다 큰 경우면 아직 도착안한거니까 그 앞에 add
 							pArrO.add(i,temp); 
 							isNAexist = true;
 							break;
@@ -277,7 +277,7 @@ class Scheduling{
 		pArrT.clear();//출력 후 다음 입력을 위해 비움
 		P.clear();
 		T.clear();
-		return s;
+		return "print"+s;
 		
 	}
 	//작업이 끝난 프로세스 후처리
@@ -286,7 +286,7 @@ class Scheduling{
 		p.setWT(p.getTT()-p.getBT());
 		p.setNT((float)(p.getTT())/p.getBT());
 		pArrT.add(p);
-		System.out.println("\n(p"+p.getPid()")finished, time: "+t);
+		System.out.println("\n(p"+p.getPid()+")finished, time: "+t);
 	}
 }
 
@@ -298,18 +298,6 @@ class SortbyPid implements Comparator<ProcessP>
         return a.getPid() - b.getPid();
     }
 }
- 
-class Tuple{
-	int np;
-	int nl;
-	Tuple(int np,int nl){
-		this.np = np;
-		this.nl =nl;
-	}
-	
-	public String toString() {
-		return "Process"+np+": "+nl;
-	}
 	
 	
 	
@@ -318,15 +306,3 @@ class Tuple{
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
