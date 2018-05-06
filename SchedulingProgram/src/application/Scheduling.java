@@ -35,7 +35,7 @@ class Scheduling{
 	          for(int i = 0; i < burstTime;i++){
 	             t++;
 	             temp.setRT(temp.getRT()-1);
-	             //System.out.println("p"+pid);
+	             System.out.print("p"+pid+" ");
 	             if(previous == pid) {
 	            	 count++;
 	             }else {
@@ -75,7 +75,7 @@ class Scheduling{
 				for(int i =0;i<timequantum;i++) {
 					t++;
 					temp.setRT(temp.getRT()-1);
-					//System.out.println("p"+pid);
+		            System.out.print("p"+pid+" ");
 					if(previous == pid) {
 		            	 count++;
 		             }else {
@@ -135,7 +135,7 @@ class Scheduling{
 	          for(int i = 0; i < burstTime;i++){
 	             t++;
 	             temp.setRT(temp.getRT()-1);
-	             System.out.println("p"+temp.getPid());
+	             System.out.print("p"+pid+" ");
 	             if(previous == pid) {
 	            	 count++;
 	             }else {
@@ -180,7 +180,7 @@ class Scheduling{
 			pArrO.remove(min);
 			temp.setRT(temp.getRT()-1);
 			t++;
-			System.out.println("p"+temp.getPid());
+            System.out.print("p"+pid+" ");
 			 if(previous == pid) {
             	 count++;
              }else {
@@ -224,8 +224,8 @@ class Scheduling{
 							pArrO.get(j).setWT(pArrO.get(j).getWT()+1);
 					}
 					t++;
-					System.out.println("p"+temp.getPid());
-					 if(previous == pid) {
+		            System.out.print("p"+pid+" ");
+					if(previous == pid) {
 		            	 count++;
 		             }else {
 		            	 System.out.println("added");
