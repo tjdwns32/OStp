@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.Locale.Category;
 import java.util.ResourceBundle;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 //import com.sun.javafx.charts.Legend;
@@ -18,24 +16,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Side;
 import javafx.scene.Node;
 import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.StackedBarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
 public class Controller implements Initializable {
 	@FXML
-	private ComboBox comSchedule;
+	private ComboBox<String> comSchedule;
 	@FXML
-	private ComboBox comPro;
+	private ComboBox<String> comPro;
 	
 	@FXML
 	private Button btnConfirm;
